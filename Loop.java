@@ -17,11 +17,13 @@ public class Loop {
         switch (choice){
             case 1:
                 System.out.println("You selected Enter Pet Info.");
-                PetInfo.info();
+                PetInfo.name();
                 break;
             case 2:
                 System.out.println("You selected Feed/Water Pet.");
-                FeedPet.feed();
+                FeedPet feed = new FeedPet();
+                feed.food();
+                feed.water();
                 break;
             case 3:
                 System.out.println("You selected Give Pet Treat.");
