@@ -1,7 +1,19 @@
 package project;
 
-public class FeedPet {
-    public static void feed(){
-        System.out.println("feed");
+interface Food {
+    void food();
+    void water();
+}
+
+class FeedPet implements Food{
+
+    @Override
+    public void food() {
+        System.out.println("Pet has been fed.");
+    }
+
+    @Override
+    public void water() {
+        System.out.println("Pet drank water.");
     }
 }
